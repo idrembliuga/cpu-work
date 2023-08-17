@@ -1,31 +1,32 @@
 import React from "react";
 import Container from "../containers/ApplicationContainer";
+import "./style/HomePage.scss";
 function Home() {
   return (
     <>
-      <div
-        className="bg-image"
-        style={{
-          backgroundImage:
-            "url(https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp)",
-          height: "100vh",
-        }}
-      >
+      <div className=" home">
         <Container>
-          <div className="jumbotron">
-            <h1 className="display-4">Hello, world!</h1>
-            <p className="lead">
+          <div className="jumbotron title-container">
+            <h1 className="display-4 center-element">
+              Hello and Welcome to CpuWork!
+            </h1>
+            <p className="lead center-element">
               This is a simple hero unit, a simple jumbotron-style component for
               calling extra attention to featured content or information.
             </p>
-            <hr className="my-4" />
-            <p>
+            <p className="center-element">
               It uses utility classes for typography and spacing to space
               content out within the larger container.
             </p>
-            <a className="btn btn-primary btn-lg" href="#" role="button">
-              Learn more
-            </a>
+            <div className="flex-element">
+              <a
+                className="btn btn-primary btn-lg center-element"
+                href="#"
+                role="button"
+              >
+                Learn more
+              </a>
+            </div>
           </div>
         </Container>
       </div>
